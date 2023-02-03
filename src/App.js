@@ -1,18 +1,20 @@
-import './App.css';
-import React from 'react';
-import MarkdownPreviewer from './components/markdownPreviewer';
-// import ReactDOM from 'react-dom';
-// import TextField from '@material-ui/core/TextField';
+import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Markdown Processor</h1>
+        <h1>Testing MUI</h1>
+        <TextField
+          id="outlined-basic"
+          label="Enter text here:"
+          variant="outlined"
+          multiline
+          rows={10}
+        />
+        <Button variant="contained">Click here!</Button>
       </header>
-      <body>
-        <MarkdownPreviewer />
-      </body>
     </div>
   );
 }
