@@ -1,19 +1,11 @@
-import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
+import MarkdownPreviewer from "./components/markdownPreviewer";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Testing MUI</h1>
-        <TextField
-          id="outlined-basic"
-          label="Enter text here:"
-          variant="outlined"
-          multiline
-          rows={10}
-        />
-        <Button variant="contained">Click here!</Button>
+        <h1>Markdown Processor</h1>
+        <MarkdownPreviewer />
       </header>
     </div>
   );
